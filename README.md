@@ -23,7 +23,63 @@ This project focuses on customer churn prediction in the banking industry using 
 ✔ **Performance Metrics** (Confusion Matrix, Accuracy Score, Classification Report)
 
 
-### 🛠 Skills Demonstrated:
+## 📊 Model Evaluation Summary
+
+We tested the following machine learning models to predict customer churn, evaluating them using accuracy, precision, recall, and F1-score.
+
+| Model                        | Accuracy | Precision (Class 1) | Recall (Class 1) | F1-Score (Class 1) |
+|------------------------------|----------|----------------------|------------------|-------------------|
+| **Random Forest**            | 86.65%   | 76%                  | 46%              | 58%               |
+| **Logistic Regression**      | 81.1%    | 55%                  | 20%              | 29%               |
+| **Support Vector Machine**   | 79.7%    | 48%                  | 32%              | 38%               |
+| **K-Nearest Neighbors (KNN)**| 83%      | 61%                  | 37%              | 46%               |
+| **Gradient Boosting**        | 86.75%   | 75%                  | 49%              | 59%               |
+
+---
+
+## 📌 Model Insights
+
+### **1️⃣ Random Forest Classifier**
+- **Accuracy:** 86.65%
+- **Strengths:** High accuracy and good precision.
+- **Weaknesses:** Recall for churned customers (46%) is relatively low, meaning the model misses a significant number of actual churn cases.
+
+### **2️⃣ Logistic Regression**
+- **Accuracy:** 81.1%
+- **Strengths:** Simple and interpretable model.
+- **Weaknesses:** Poor recall (20%) for churned customers, making it unreliable for identifying at-risk customers.
+
+### **3️⃣ Support Vector Machine (SVM)**
+- **Accuracy:** 79.7%
+- **Strengths:** Effective in complex decision boundaries.
+- **Weaknesses:** Low recall (32%) and F1-score (38%) for churned customers, making it less reliable for churn prediction.
+
+### **4️⃣ K-Nearest Neighbors (KNN)**
+- **Accuracy:** 83%
+- **Strengths:** Higher precision (61%) than SVM and Logistic Regression.
+- **Weaknesses:** Struggles with recall (37%) and may be sensitive to data size and distribution.
+
+### **5️⃣ Gradient Boosting Classifier**
+- **Accuracy:** **86.75% (Best Performance)**
+- **Strengths:** Highest accuracy and a good balance of precision (75%) and recall (49%).
+- **Weaknesses:** Computationally expensive compared to simpler models.
+
+---
+
+## ✅ **Conclusion & Recommendation**
+
+Based on the evaluation, the **Gradient Boosting Classifier** emerges as the best model with the highest accuracy (**86.75%**) and a balanced trade-off between precision and recall.
+
+### 🚀 **Next Steps:**
+- **Feature Engineering:** Identify additional customer behavior indicators.
+- **Data Balancing Techniques:** Improve recall by handling class imbalance.
+- **Hyperparameter Tuning:** Optimize the model for better performance.
+
+Implementing the Gradient Boosting model can enhance the bank’s ability to **identify and retain high-risk customers**, leading to improved customer satisfaction and reduced churn rates.
+
+---
+
+## 🛠 Skills Demonstrated:
 ✅ **Machine Learning** (Supervised Learning, Classification)
 
 ✅ **Data Preprocessing & Feature Engineering**
@@ -34,7 +90,7 @@ This project focuses on customer churn prediction in the banking industry using 
 
 ✅ **SQL-like Data Handling** (Pandas, NumPy)
 
-### 🖥 Technologies & Tools Used:
+## 🖥 Technologies & Tools Used:
 🔹 **Python** (Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn)
 
 🔹 **Machine Learning** (Random Forest Classifier)
@@ -43,9 +99,6 @@ This project focuses on customer churn prediction in the banking industry using 
 
 🔹 **Data Handling** (Pandas for CSV processing, handling missing values)
 
-### 📊 Results & Key Insights:
-- High accuracy achieved using Random Forest Classifier.
-- Gender, Geography, and Credit Score were key factors affecting churn.
-- Feature Engineering (like One-Hot Encoding) improved model performance.
-- Balanced class distribution was considered to avoid bias in predictions.
-- Insights help banks develop retention strategies based on high-risk customers.
+---
+
+**📌 Note:** This report is based on a dataset of 2,000 samples. Further testing and model fine-tuning may be needed before deployment.
