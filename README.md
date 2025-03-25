@@ -25,7 +25,7 @@ This project focuses on customer churn prediction in the banking industry using 
 
 ## 📊 Model Evaluation Summary
 
-We tested the following machine learning models to predict customer churn, evaluating them using accuracy, precision, recall, and F1-score.
+Tested the following machine learning models to predict customer churn, evaluating them using accuracy, precision, recall, and F1-score.
 
 | Model                        | Accuracy | Precision (Class 1) | Recall (Class 1) | F1-Score (Class 1) |
 |------------------------------|----------|----------------------|------------------|-------------------|
